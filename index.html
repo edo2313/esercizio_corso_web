@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,72 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <div id="header">
+        <img src="img/logo.png" alt="logo">
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Prodotti <span class="badge">10</span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Schede Elettroniche</a></li>
+                            <li><a href="#">Componenti</a></li>
+                            <li><a href="#">Attrezzi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="carousel slide" data-ride="carousel" id="carousel-auto">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-auto" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-auto" data-slide-to="1"></li>
+            <li data-target="#carousel-auto" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/car1.jpg">
+                <div class="carousel-caption">Testo</div>
+            </div>
+            <div class="item">
+                <img src="img/car2.jpg">
+                <div class="carousel-caption">Testo</div>
+            </div>
+            <div class="item">
+                <img src="img/car3.jpg">
+                <div class="carousel-caption">Testo</div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#carousel-auto" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-auto" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
 </body>
+
 </html>
