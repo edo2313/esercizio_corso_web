@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sito</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="header">
-        <img src="img/logo.png" alt="logo">
+        <img class="img-responsive" id="logo" src="img/logo.webp" alt="logo">
     </div>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -27,9 +32,10 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="#" class="navbar-item">Home <span class="sr-only">(current)</span></a>
+                    </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                        <a href="#" class="navbar-item" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                             aria-expanded="false">Prodotti <span class="badge">10</span><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Schede Elettroniche</a></li>
@@ -37,7 +43,7 @@
                             <li><a href="#">Attrezzi</a></li>
                         </ul>
                     </li>
-                    <li><a href="contatti.html">Contatti</a></li>
+                    <li><a href="contatti.html" class="navbar-item">Contatti</a></li>
                 </ul>
             </div>
         </div>
@@ -51,16 +57,16 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="img/car1.jpg">
-                <div class="carousel-caption">Testo</div>
+                <img src="img/arduino_uno.webp">
+                <div class="carousel-caption">Arduino Uno</div>
             </div>
             <div class="item">
-                <img src="img/car2.jpg">
-                <div class="carousel-caption">Testo</div>
+                <img src="img/arduino_mega.webp">
+                <div class="carousel-caption">Arduino Mega</div>
             </div>
             <div class="item">
-                <img src="img/car3.jpg">
-                <div class="carousel-caption">Testo</div>
+                <img src="img/arduino_nano.webp">
+                <div class="carousel-caption">Arduino Nano</div>
             </div>
         </div>
         <a class="left carousel-control" href="#carousel-auto" role="button" data-slide="prev">
