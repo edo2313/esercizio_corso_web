@@ -19,10 +19,23 @@ body {
 }
 
 .navbar {
-    background-color: #018f8a;
+    background-color: #008006;
     margin-bottom: 0;
 }
 
 .navbar-item {
     color: white !important;
+}
+
+#page-title {
+    text-align: center;
+}
+#footer {
+    border-top: 10px solid #008006;
+    padding: 20px;
+    background-color: #202020;
+    color: white;
+}
+#footer div {
+    border-left: 4px solid #008006;
 }
