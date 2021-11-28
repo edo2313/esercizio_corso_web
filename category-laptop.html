@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PineStore</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <img class="img-responsive" id="logo" src="img/logo.png" alt="logo">
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="navbar-item">Home</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="navbar-item" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Prodotti <span class="badge">10</span><span
+                                class="caret"></span><span class="sr-only">(current)</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="category-sbc.html">SBC</a></li>
+                            <li><a href="category-laptop.html">Laptop</a></li>
+                            <li><a href="category-saldatori.html">Saldatori</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contatti.html" class="navbar-item">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="col-12" id="page-title">
+            <h1>Laptop</h1>
+            <p>I nostri laptop e i loro ricambi</p>
+        </div>
+    </div>
+    <div class="container-fluid" id="products">
+        <div class="col-12">
+            <h2>Tutti i prodotti</h2>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="product.html">
+                <img src="img/pinebook-lite.jpg" alt="" class="img-responsive">
+                <div>
+                    <h4>PineBook</h4>
+                    <span>Laptop con CPU a 4 core e 2GB di RAM</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="product.html">
+                <img src="img/pinebook-pro.jpg" alt="" class="img-responsive">
+                <div>
+                    <h4>PineBook Pro</h4>
+                    <span>Laptop con CPU a 6 core e 4GB di RAM</span>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+            <a href="product.html">
+                <img src="img/PinebookPro-mainboard-1-1.jpg" alt="" class="img-responsive">
+                <div>
+                    <h4>PineBook Pro MB</h4>
+                    <span>Scheda madre per il PineBook Pro</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer" class="container-fluid">
+        <div class="col-xs-12 col-sm-4" id="footer-social">
+            <a href="https://twitter.com/thepine64"><span class="glyphicon glyphicon-link"></span> Twitter</a><br>
+            <a href="https://t.me/PINE64_News"><span class="glyphicon glyphicon-link"></span> Telegram</a><br>
+            <a href="http://forum.pine64.org/"><span class="glyphicon glyphicon-link"></span> Forum</a><br>
+        </div>
+        <div class="col-xs-12 col-sm-4" id="footer-contacts">
+            <i>PineStore</i><br>
+            <span>Via Clash Royale, 37</span><br>
+            <a href="contatti.html">Contattaci!</a>
+        </div>
+        <div class="col-xs-12 col-sm-4" id="footer-info">
+            <span>&copy; 2021 Edoardo Ridolfi</span><br>
+            <a href="" data-toggle="modal" data-target="#privacyModal">Informativa privacy</a><br>
+            <a href="" data-toggle="modal" data-target="#disclaimerModal">Disclaimer</a>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Informativa privacy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    È un sito statico, non ci sono dati da gestire :)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="disclaimerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="disclaimerModalLabel">Disclaimer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Tutte le immagini e i testi presenti in questo sito sono di proprietà di <a href="https://pine64.com/">Pine64</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+
+</html>

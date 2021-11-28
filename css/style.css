@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }
 
 #header {
@@ -19,24 +20,103 @@ body {
 }
 
 .navbar {
-    background-color: #008006;
+    background-color: #b5e8ff;
     margin-bottom: 0;
-}
-
-.navbar-item {
-    color: white !important;
 }
 
 #page-title {
     text-align: center;
+    margin-bottom: 30px;
 }
+
+#page-title h1 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #556280;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#page-title p {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#products a {
+    text-decoration: none;
+    color: #2c313d;
+}
+
+#products h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+#products div {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#products h4 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+#products img {
+    border-width: 2px 2px 0px 2px;
+    border-style: solid;
+    border-color: #556280;
+    border-radius: 10px 10px 0 0;
+}
+
+#products div div {
+    margin: 0;
+    border-width: 0 2px 2px 2px;
+    border-style: solid;
+    border-color: #556280;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+
+}
+
+#principles {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#principles h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#principles span {
+    font-size: 4em;
+    color: #556280;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 #footer {
-    border-top: 10px solid #008006;
+    border-top: 10px solid #b5e8ff;
     padding: 20px;
     background-color: #202020;
     color: white;
 }
+
 #footer div {
-    border-left: 4px solid #008006;
+    border-left: 4px solid #b5e8ff;
     margin-bottom: 8px;
+}
+
+#product-details {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#contact-form div {
+    margin-bottom: 20px;
+    padding: 10px;
 }
